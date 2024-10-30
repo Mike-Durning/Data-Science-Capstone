@@ -1,6 +1,6 @@
 # Data-Science-Capstone
 
-**Brief Background** - 
+**Brief Background** - This dataset - for death rates for suicide, by sex, race, hispanic origin, and age is from the US and sourced from the CDCs national vital statistics system. This is a valuable data set due to the features it tracks, and allows for analysis of suicide rates from multiple directions and may help find specific high risk groups. This information can then be used to potentially market mental health, or positive interventions or strategies towards these groups.
 
 | **Section**                      | **Details**                                                                                                                                                                                                                       |
 | -------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
