@@ -1,7 +1,7 @@
 # **Salary Trends in Data Science: A Comprehensive Analysis of Compensation Factors**
 ---
 ## Background & Question
-
+--
 ### Research Question and Motivation
 
 **Research Question:**  
