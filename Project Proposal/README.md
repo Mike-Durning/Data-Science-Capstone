@@ -54,7 +54,7 @@ Salaries in the data science field are significantly influenced by experience le
 - **Dataset:** `data_science_salaries.csv`  
 - **Description and Suitability:**  
   This dataset includes detailed information on data science salaries, job titles, experience levels, employment types, locations, and company sizes across various countries.  
-  With over 14,000 entries, it provides a robust foundation for analyzing role transitions and salary growth across different levels of experience and job types.  
+  With almost 15,000 entries, it provides a robust foundation for analyzing role transitions and salary growth across different levels of experience and job types.  
   The data structure allows for segmentation by:
   - `experience_level`
   - `job_title`
@@ -103,7 +103,7 @@ Salaries in the data science field are significantly influenced by experience le
 
 ## Success Indicators
 
-- The question will be considered answered if we can quantify the effects of experience level, job title, remote work, company size, and geographic location on salary.
+- The question will be considered answered if I can quantify the effects of experience level, job title, remote work, company size, and geographic location on salary.
 - The hypothesis will be supported if statistical tests show significant differences in salaries based on these factors.
 - The regression model will validate the impact of each variable on salary, and model performance metrics (R-squared, RMSE) will confirm the accuracy of predictions.
 - Insights into salary trends across different regions, job roles, and companies will provide actionable recommendations for both job seekers and employers.
