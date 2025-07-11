@@ -2,66 +2,70 @@
 ---
 ## EDA High Level Overview 
 ---
-1. Import Libraries  
-   - Action: Import the following libraries:  
-     - pandas
-     - numpy
-     - matplotlib.pyplot
-     - seaborn
-     - os
 
-2. Load Data  
-   - Action: Load the Data_Science_Salaries.csv file into a pandas DataFrame.  
-   - Code Example:  
-     data = pd.read_csv('Data_Science_Salaries.csv')
-   - Function Used: pd.read_csv()
+1. **Import Libraries**  
+   - **Action**: Import the following libraries:  
+     - `pandas`  
+     - `numpy`  
+     - `matplotlib.pyplot`  
+     - `seaborn`  
+     - `os`  
 
-3. Continuous Variables Analysis  
-   - Action: Calculate summary statistics for salary_in_usd and remote_ratio.  
-   - Metrics Calculated:  
-     - Kurtosis: .kurt()
-     - Skewness: .skew()
-     - Summary Statistics: .describe().T
-     - Median: .median()
-   - Additional Metric: Confidence Interval (95%)
+2. **Load Data**  
+   - **Action**: Load the `Data_Science_Salaries.csv` file into a pandas DataFrame.  
+   - **Code Example**:  
+     ```python
+     data = pd.read_csv('Data_Science_Salaries.csv')
+     ```  
+   - **Function Used**: `pd.read_csv()`  
 
-4. Categorical Variables Analysis  
-   - Action: Analyze frequency of categorical variables such as:  
-     - experience_level
-     - employment_type
-     - job_title  
-     - company_size  
-     - company_location
-   - Outputs: Frequency and percentage breakdown in categorical_summary.
+3. **Continuous Variables Analysis**  
+   - **Action**: Calculate summary statistics for `salary_in_usd` and `remote_ratio`.  
+   - **Metrics Calculated**:  
+     - **Kurtosis**: `.kurt()`  
+     - **Skewness**: `.skew()`  
+     - **Summary Statistics**: `.describe().T`  
+     - **Median**: `.median()`  
+   - **Additional Metric**: `Confidence Interval (95%)`  
 
-5. Boxplot: Experience vs. Salary
-   - Action: Create a boxplot to visualize experience level against annual salary in USD.  
-   - Library Used: seaborn
-   - Function Used: sns.boxplot()  
+4. **Categorical Variables Analysis**  
+   - **Action**: Analyze frequency of categorical variables such as:  
+     - `experience_level`  
+     - `employment_type`  
+     - `job_title`  
+     - `company_size`  
+     - `company_location`  
+   - **Outputs**: Frequency and percentage breakdown in `categorical_summary`.  
 
-6. Filter Job Titles and Boxplot: Job Titles vs. Salary  
-   - Action: Focus on key job titles
-     - Data Scientist 
-     - Machine Learning Engineer 
-     - Data Engineer  
-     - Data Analyst  
-     - Research Scientist  
-   - Visualization: Create a boxplot for job title vs salary using sns.boxplot()
+5. **Boxplot: Experience vs. Salary**  
+   - **Action**: Create a boxplot to visualize experience level against annual salary in USD.  
+   - **Library Used**: `seaborn`  
+   - **Function Used**: `sns.boxplot()`  
 
-7. Histogram: Remote Ratio  
-   - Action: Create a histogram to show the distribution of remote work ratios in data science roles  
-   - Library Used: seaborn
-   - Function Used: sns.histplot()  
+6. **Filter Job Titles and Boxplot: Job Titles vs. Salary**  
+   - **Action**: Focus on key job titles  
+     - Data Scientist  
+     - Machine Learning Engineer  
+     - Data Engineer  
+     - Data Analyst  
+     - Research Scientist  
+   - **Visualization**: Create a boxplot for job title vs salary using `sns.boxplot()`  
 
-8. Heatmap: Salary vs. Remote Ratio  
-   - Action: Visualize the correlation between salary and remote ratio using a heatmap
-   - Library Used: seaborn
-   - Function Used: sns.heatmap()
+7. **Histogram: Remote Ratio**  
+   - **Action**: Create a histogram to show the distribution of remote work ratios in data science roles  
+   - **Library Used**: `seaborn`  
+   - **Function Used**: `sns.histplot()`  
 
-9. Heatmap: Numeric Correlations  
-   - Action: Create a heatmap for the correlation matrix of numerical variables
-   - Library Used seaborn
-   - Function Used: sns.heatmap()
+8. **Heatmap: Salary vs. Remote Ratio**  
+   - **Action**: Visualize the correlation between salary and remote ratio using a heatmap  
+   - **Library Used**: `seaborn`  
+   - **Function Used**: `sns.heatmap()`  
+
+9. **Heatmap: Numeric Correlations**  
+   - **Action**: Create a heatmap for the correlation matrix of numerical variables  
+   - **Library Used**: `seaborn`  
+   - **Function Used**: `sns.heatmap()`
+
 ## Recap Background & Question
 --- 
 ### Research Question
