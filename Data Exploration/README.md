@@ -177,6 +177,6 @@ These findings address the research question: How do key factors such as experie
 
 For the next steps, I will focus on data cleaning and preparation for modeling. This will include converting categorical variables into dummy variables for quantitative analysis. I will address any missing values and review outliers to decide if they should be removed or kept to avoid skewing results.
 
-I will also consider normalizing or standardizing continuous variables like salary_in_usd to reduce the impact of extreme values. Additionally, feature engineering will help create variables that better represent aspects of experience, such as years in the field, improving our model's performance in predicting salaries. These steps will improve our dataset for further analysis, allowing me to address the research question in more detail.
+I will also consider normalizing or standardizing continuous variables like salary_in_usd to reduce the impact of extreme values. Additionally, feature engineering will help create variables that better represent aspects of experience, such as years in the field, improving our model's performance in predicting salaries. These steps will improve the dataset for further analysis, allowing me to address the research question in more detail.
 
 ---
