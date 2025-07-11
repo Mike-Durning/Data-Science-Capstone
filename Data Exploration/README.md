@@ -1,6 +1,6 @@
 # Data Exploration
 ---
-## EDA High Level Overview 
+## High Level Overview 
 ---
 
 1. **Import Libraries**  
