@@ -80,11 +80,11 @@ Predict that remote work, larger company size, and location will correlate with 
 ---
 ## Methods
 
-Our dataset, `Data_Science_Salaries.csv`, contains approximately 15,000 entries detailing factors that impact salaries in data science roles, including experience level, job title, employment type, salary, remote work ratio, employee residence, and company size. The data was provided in csv format, allowing for easy loading and manipulation in Python. Since the dataset was complete and did not require scraping or merging, we were able to move directly into preprocessing and analysis. All salary data is standardized in USD for consistent comparisons across different locations.
+The dataset, `Data_Science_Salaries.csv`, contains approximately 15,000 entries detailing factors that impact salaries in data science roles, including experience level, job title, employment type, salary, remote work ratio, employee residence, and company size. The data was provided in csv format, allowing for easy loading and manipulation in Python. Since the dataset was complete and did not require scraping or merging, I was able to move directly into preprocessing and analysis. All salary data is standardized in USD for consistent comparisons across different locations.
 
-For EDA, we began with data cleaning and preprocessing. This included checking for missing values, duplicates, and standardizing salary values to USD. Since the dataset was well organized, we proceeded directly to analyze distributions and relationships among key variables. Categorical variables were converted to numerical format using one hot encoding to prepare for further statistical analysis and modeling.
+For EDA, I began with data cleaning and preprocessing. This included checking for missing values, duplicates, and standardizing salary values to USD. Since the dataset was well organized, I proceeded directly to analyze distributions and relationships among key variables. Categorical variables were converted to numerical format using one hot encoding to prepare for further statistical analysis and modeling.
 
-Our analysis focused on identifying patterns using visualizations and summary statistics. We used boxplots and histograms to examine salary distributions by experience level, job title, and company size, as these charts show averages and variation. Correlation analysis, including scatter plots and a correlation heatmap, helped us understand relationships between continuous variables like remote work ratio and salary. This EDA allowed us to spot trends and outliers, guiding our analyses and improving our approach to predictive modeling.
+The analysis focused on identifying patterns using visualizations and summary statistics. I used boxplots and histograms to examine salary distributions by experience level, job title, and company size, as these charts show averages and variation. Correlation analysis, including scatter plots and a correlation heatmap, helped me understand relationships between continuous variables like remote work ratio and salary. This EDA allowed me to spot trends and outliers, guiding my analyses and improving my approach to predictive modeling.
 
 ---
 
@@ -95,8 +95,8 @@ Our analysis focused on identifying patterns using visualizations and summary st
 ![Table 1 - Continuous Statistics](EDA_outputs/Table_1_-_Continuous_Statistics.png)
 
 **Context:** This table provides summary statistics for salary_in_usd and remote_ratio.  
-**Interpretation:**
 
+**Interpretation:**
 - **Salary:** The mean salary of around $150,000 is higher than the median, indicating some high-paying roles are raising the average. The positive skew and high kurtosis suggest a right-skewed distribution with a few outliers.
 - **Remote Ratio:** The mean remote ratio is 32.76%, but with a median of 0%, showing most roles are fully on-site, with a smaller section being remote or hybrid. Negative kurtosis suggests a flatter distribution, with fewer extreme values compared to the mean.
 
@@ -105,6 +105,7 @@ Our analysis focused on identifying patterns using visualizations and summary st
 ![Table 2 - Experience Level Summary](EDA_outputs/Table_2_-_Experience_Level_Summary.png)
 
 **Context:** This table shows the frequency and percentage distribution for experience_level, summarizing workforce breakdown by level.  
+
 **Interpretation:** A majority of the roles are at senior and mid-level, indicating that the dataset mainly includes experienced professionals. The smaller representation of entry level and executive roles implies fewer opportunities for new or executive level hires.
 
 ---
@@ -117,6 +118,7 @@ Our analysis focused on identifying patterns using visualizations and summary st
 
 
 **Context:** This boxplot displays salary distribution across experience levels.  
+
 **Interpretation:** Median salaries increase with experience, with executive level roles showing the highest median. Salary ranges expand at higher experience levels, showing greater variability in salary as experience increases. Outliers at the mid and senior levels indicate that some roles or companies provide exceptionally high salaries compared to the average range.
 
 ---
@@ -125,7 +127,8 @@ Our analysis focused on identifying patterns using visualizations and summary st
 
 ![Figure 2 - Annual Salary Distribution of Key Data Science Job Titles](EDA_outputs/Figure_2_-_Annual_Salary_Distribution_of_Key_Data_Science_Job_Titles.png)
 
-**Context:** This boxplot displays salary differences for roles like Data Scientist, Machine Learning Engineer, Data Engineer, Data Analyst, and Research Scientist.  
+**Context:** This boxplot displays salary differences for roles like Data Scientist, Machine Learning Engineer, Data Engineer, Data Analyst, and Research Scientist.
+
 **Interpretation:** Among these roles, Machine Learning Engineers and Research Scientists show higher median salaries compared to the rest, indicating the strong demand and expertise for a specialized skill set. The presence of outliers in each role suggests that specific high paying positions may exist within each job category, but the range of salaries vary.
 
 ---
@@ -134,7 +137,8 @@ Our analysis focused on identifying patterns using visualizations and summary st
 
 ![Figure 3 - Distribution of Remote Work Ratios in Data Science Roles](EDA_outputs/Figure_3_-_Distribution_of_Remote_Work_Ratios_in_Data_Science_Roles.png)
 
-**Context:** This histogram shows the distribution of remote work ratios, ranging from on-site to fully remote.  
+**Context:** This histogram shows the distribution of remote work ratios, ranging from on-site to fully remote.
+
 **Interpretation:** Most roles are on-site or fully remote, as seen by peaks at 0-20% and 80-100%. The distribution reflects a trend in remote work arrangements, with fewer hybrid roles. This pattern reveals that many companies either fully support or limit remote work options.
 
 ---
@@ -144,6 +148,7 @@ Our analysis focused on identifying patterns using visualizations and summary st
 ![Figure 4 - Correlation Between Annual Salary and Remote work Ratio](EDA_outputs/Figure_4_-_Correlation_Between_Annual_Salary_and_Remote_work_Ratio.png)
 
 **Context:** This heatmap shows the correlation between salary_in_usd and remote_ratio.  
+
 **Interpretation:** The weak or near zero correlation indicates that remote work ratio does not strongly influence salary, suggesting remote work flexibility is not a key factor in determining salary.
 
 ---
@@ -153,6 +158,7 @@ Our analysis focused on identifying patterns using visualizations and summary st
 ![Figure 5 - Correlation Matrix for Numeric Variables in Data Science Salaries Dataset](EDA_outputs/Figure_5_-_Correlation_Matrix_for_Numeric_Variables_in_Data_Science_Salaries_Dataset.png)
 
 **Context:** This heatmap presents the correlation matrix for numeric variables in the dataset, including work_year, salary, salary_in_usd, and remote_ratio.  
+
 **Interpretation:** The correlation matrix reveals weak relationships between the numeric variables. There is a slight negative correlation between work_year and remote_ratio, suggesting that in more recent years, there might be less of a reason for remote work; however, this relationship is weak.
 
 ---
@@ -161,16 +167,16 @@ Our analysis focused on identifying patterns using visualizations and summary st
 
 ### Discussion
 
-Our exploratory analysis revealed several insights into salary trends within data science roles. The key finding is that experience level influences salary, with higher experience levels associated with a broad salary range and higher median pay (see Figure 1). Specific job titles, such as Machine Learning Engineer and Research Scientist, earn higher salaries than other roles due to having a specialized skill set (see Figure 2). However, the remote work ratio does not appear to strongly impact salary, as shown by the near zero correlation (Figure 4). This implies that while some positions offer remote flexibility, it is not a primary factor for determining salary.
+The exploratory analysis revealed several insights into salary trends within data science roles. The key finding is that experience level influences salary, with higher experience levels associated with a broad salary range and higher median pay (see Figure 1). Specific job titles, such as Machine Learning Engineer and Research Scientist, earn higher salaries than other roles due to having a specialized skill set (see Figure 2). However, the remote work ratio does not appear to strongly impact salary, as shown by the near zero correlation (Figure 4). This implies that while some positions offer remote flexibility, it is not a primary factor for determining salary.
 
-These findings address our research question: How do key factors such as experience level, job title, company size, remote work ratio, and geographic location affect salaries in the data science field? Experience level and job title emerged as significant factors, while remote work flexibility appears less influential, suggesting higher paying roles may be more closely associated with experience and a specialized skill set.
+These findings address the research question: How do key factors such as experience level, job title, company size, remote work ratio, and geographic location affect salaries in the data science field? Experience level and job title emerged as significant factors, while remote work flexibility appears less influential, suggesting higher paying roles may be more closely associated with experience and a specialized skill set.
 
 ---
 
 ### Next Steps
 
-For the next steps, we will focus on data cleaning and preparation for modeling. This will include converting categorical variables into dummy variables for quantitative analysis. We will address any missing values and review outliers to decide if they should be removed or kept to avoid skewing results.
+For the next steps, I will focus on data cleaning and preparation for modeling. This will include converting categorical variables into dummy variables for quantitative analysis. I will address any missing values and review outliers to decide if they should be removed or kept to avoid skewing results.
 
-We will also consider normalizing or standardizing continuous variables like salary_in_usd to reduce the impact of extreme values. Additionally, feature engineering will help create variables that better represent aspects of experience, such as years in the field, improving our model's performance in predicting salaries. These steps will improve our dataset for further analysis, allowing us to address the research question in more detail.
+I will also consider normalizing or standardizing continuous variables like salary_in_usd to reduce the impact of extreme values. Additionally, feature engineering will help create variables that better represent aspects of experience, such as years in the field, improving our model's performance in predicting salaries. These steps will improve our dataset for further analysis, allowing me to address the research question in more detail.
 
 ---
